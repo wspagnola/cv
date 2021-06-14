@@ -1,0 +1,163 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{titlesec} % for \titleformat command
+\usepackage[usenames,dvipsnames]{color} % for \color command
+\usepackage{enumitem} %for [leftmargin=*] in \resumeSubHeadingListStart itemize environment 
+\usepackage[empty]{fullpage} %sets margins to fullpage 
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref} % For website urls 
+\usepackage[left=2cm, right=5cm, top=2cm]{geometry} %Set margins
+\usepackage{cv_style} % My stylesheet based on MIT/ Sourabh Bajaj
+
+
+\setlength{\footskip}{4.09in}
+%--- What are these packages for? ---
+%package{tabularx}
+%\usepackage{marvosym}
+%\usepackage{verbatim}
+%\usepackage[hidelinks]{hyperref}
+
+%\usepackage[english]{babel}
+%\usepackage{latexsym}
+%------------------------------------
+%\input{glyphtounicode} % What is this for?
+%------------------------------------
+
+\begin{document}
+
+%----------HEADING-----------------
+%\vspace{-12pt}
+\begin{center}
+{\huge \textbf{William Spagnola}} 
+\end{center}
+\vspace{-10pt}
+\small
+%[\color{black}\titlerule \vspace{-5pt}]
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+		 470 Lenox Ave. & 
+%\href{http://williamspagnola.com/}{http://www.williamspagnola.com} 
+& 
+		\href{mailto:wspagnola@nyu.edu}{wspagnola@nyu.edu} \\
+		
+		 New York, NY 10037 & 
+		 \href{/https://github.com/wspagnola/}{https://github.com/wspagnola} &
+		 717-683-4039 \\
+\end{tabular*}
+%[\color{black}\titlerule \vspace{-5pt}]
+\vspace{-12pt}
+%%-----------EXPERIENCE-----------------
+\section{Experience}
+	\resumeSubHeadingListStart
+	
+		\resumeSubheading
+			{Research Alliance for New York City Schools}{New York, NY}
+			{Technical Research Analyst}{July 2019 to present}
+			\resumeItemListStart
+				\resumeItem{Designed a regression discontinuity study to analyze the causal effect of Career Technical Education on High School Graduation rates.}  
+				\resumeItem{Collaborated with a team to developed a survey to evaluate effectiveness of an after-school STEM program for disadvantaged students. Administered the survey via Qualtrics.}
+				\resumeItem {Created a Logistic Regression model to predict drop out risk among New York City public high school students.} 
+			\resumeItemListEnd
+			
+		\resumeSubheading
+			{Tobacco Research Lab} {New York, NY}
+			{Research Intern}{January 2019 to June 2019}
+			\resumeItemListStart
+				\resumeItem{Studied smoking trajectories patterns using longitudinal survey data}
+				\resumeItem{Created interactive visualizations of smoking patterns across multiple stages in the study}
+			\resumeItemListEnd
+
+	\resumeSubheading
+	{The Rusk Institute of Rehabilitation Medicine} {New York, NY}
+	{Statistical Consultant}{February 2018 to June 2019}
+		\resumeItemListStart
+			\resumeItem{Prepared data visualization and analysis for a study published in \textit{The Journal of the International Associaton for the Study of Pain} on the relationship between cytokines and Fibromylagia.}
+			\resumeItem {Collaborated on a study proposal of the effects of Heart Rate Variable using a multi-level modeling.  Validated the design using simulation.}
+				\resumeItem {Provided statistical consulting for research on the effectiveness of exercise and speech therapy.}
+		\resumeItemListEnd
+	
+	\resumeSubheading
+	{New York City Department of Education}{Bronx, NY}
+	{Special Education Teacher}{September 2009 to June 2016}
+		\resumeItemListStart
+			\resumeItem {Taught students with autism and intellectual disabilities in a public special education high school.}
+		\resumeItemListEnd
+	\resumeSubHeadingListEnd
+%-----------EDUCATION-----------------
+
+\section{Education}
+	\resumeSubHeadingListStart
+   		\resumeSubheadingAward
+      		{New York University}{New York, NY}
+      		{Master of Science in Computer Science;  GPA: 4.00}{}
+      		{Recipient of Western Scholarship}{}
+      	\resumeSubheading
+      		{Pace University}{New York, NY}
+      		{Master of Special Education} {}
+      	\resumeSubheading
+      		{Loyola University}{Baltimore, MD}
+      		{B.A. in English Literature with Spanish Minor}{}
+    \resumeSubHeadingListEnd
+
+%------------- PROJECTS ------------------
+\section{Projects}
+\resumeItemListStart
+	\projectItem {Interactive Shiny App of COVID19}
+				 {Created an interactive/up-to-date dashboard of COVID case and death data at the level country, state, and county levels}
+	\projectItem {Unsupervised Learning Project on 2016 Election Data}
+				 {Investigated county-level presidential election trends}
+	\projectItem{Family Heritage Website}
+				{Currently developing a website on Pennsylvanian German family history.}
+	\projectItem{Gender Dynamics in Data Science Survey Project}
+				{Collaborated on a team to create a survey to investigate perceptions of gender and ability in data science.}
+	\projectItem {Data Visualization}
+				 {Won an award from the NYU Statistics Club for creating a data visualization that compared New York City crime rates on Halloween to yearly averages.}
+
+% Machine Learning Project to Predict NYC High School Graduation Rates: Created models using Random
+%Forest and Lasso Regression to predict school-level graduation rates based on data obtained from the New York City Department of Education.
+% Causal Inference: Simulated data to study how violations of assumptions aected treatment estimates in Regression
+% Reproducibility Study on Airbnb: Researched racial discrimination in the online rental market by replicating th results from a study on Airbnb and using multiple linear regression to perform original analyses on the interaction eects %of race with other variables.
+% Tableau Dashboard: Election Data 
+% Causal Inference: Simulated data to study how violations of assumptions affected treatment estimates in Regression Discontinuity, Instrumental Variable, and Fixed-Effects Panel Data designs
+% Unsupervised Learning Project on 2016 Election Data: Investigated county-level presidential election trends using k-means and model-based clustering algorithms.
+% Webscraping/Text Analysis: Beatles Chords  
+% Twitter/NLP Project:  Tweets Naive Bayes
+% Logistic Regression: Stop & Frisk Data 
+\resumeItemListEnd
+
+% ------------- SKILLS	------------------
+
+\section{Skills}
+\vspace{-12pt}
+\begin{itemize}
+\small
+\begin{minipage}{0.3\linewidth}
+    \item R and RShiny
+    \item Python
+    \item SQL
+\end{minipage}
+% Note you have to add as many items here as are in the two columns
+\begin{minipage}{0.025\linewidth}
+	\item[\hspace{\fill}]
+	\item[\hspace{\fill}]
+	\item[\hspace{\fill}]
+\end{minipage}
+\begin{minipage}{0.3\linewidth}
+    \item Tableau
+    \item Stata
+    \item SQL
+\end{minipage}
+\begin{minipage}{0.025\linewidth}
+	\item[\hspace{\fill}]
+	\item[\hspace{\fill}]
+	\item[\hspace{\fill}]
+\end{minipage}
+\begin{minipage}{0.3\linewidth}
+	\item Google Apps Script
+    \item Git
+    \item HTML/CSS
+\end{minipage}
+\end{itemize}
+
+\end{document}
+
+

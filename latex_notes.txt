@@ -1,0 +1,6 @@
+
+% Note: \item[] removes bullet
+
+%% Tabular notes
+% Note: what does l@ mean?
+% [t]
