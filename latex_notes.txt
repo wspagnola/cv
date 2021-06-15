@@ -1,6 +1,89 @@
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Note: \item[] removes bullet
 
 %% Tabular notes
 % Note: what does l@ mean?
 % [t]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%--- What are these packages for? ---
+%package{tabularx}
+%\usepackage{marvosym}
+%\usepackage{verbatim}
+%\usepackage[hidelinks]{hyperref}
+
+%\usepackage[english]{babel}
+%\usepackage{latexsym}
+%------------------------------------
+%\input{glyphtounicode} % What is this for?
+%------------------------------------
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\vspace{-12pt}
+%[\color{black}\titlerule \vspace{-5pt}]
+
+
+
+%----------------------------------------------------------------------%
+%--------------------------- Adjust Margin ----------------------------%
+%----------------------------------------------------------------------%
+
+%--- Note: Think geometry packages is probably best for this but will leave for now ---*/
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.0in}
+
+%----------------------------------------------------------------------%
+%--------------------------- Miscellaneous ----------------------------%
+%----------------------------------------------------------------------%
+\pdfgentounicode=1 % Ensure that generate pdf is machine readable/ATS parsable
+%\urlstyle{same}
+
+
+
+
+%-----------------------------------------------------------------------%
+%---------------------------- Old Code ---------------------------------%
+%-----------------------------------------------------------------------%
+
+%----- Do I need this ? --------
+%\newcommand{\resumeSubSubheading}[2]{
+%    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+%      \textit{\small#1} & \textit{\small #2} \\
+%    \end{tabular*}\vspace{-5pt}
+%}
+
+%------- Resume Item --------%
+%\newcommand{\resumeItem}[2]{
+%  \item\small{
+%    \textbf{#1}{: #2 \vspace{-2pt}}
+%  }
+%}
+
+%------- Resume Sub-item --------%
+%\newcommand{\resumeSubItem}[2]{
+%	\resumeItem{#1}{#2}\vspace{-4pt}
+%}
+
+%-------------------- Renew \labelitemii ----------------------%
+%--- Note: This modifies the second level of itemized lists ---%
+%--- Note: %\circ% is an open circle in math mode -------------%
+%\renewcommand{\labelitemii}{$\circ$}
+
+
+
+%[\color{black}\titlerule \vspace{-5pt}]
+
+
+
+
+
