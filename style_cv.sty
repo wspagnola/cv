@@ -27,7 +27,7 @@
 %\usepackage{fancyhdr}
 %\usepackage[english]{babel}
 %\usepackage{tabularx}
-%\input{glyphtounicode}
+\input{glyphtounicode}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -36,16 +36,16 @@
 \renewcommand{\footrulewidth}{0pt}
 
 
-%----------------------------------------------------------------------%
+%-------------------------------------------------------------------------%
 %------------------------- Alignment Commands -------------------------%
-%----------------------------------------------------------------------%
+%-------------------------------------------------------------------------%
 \raggedright % Left-alignment
 \raggedbottom
 \setlength{\tabcolsep}{0in}
 
-%----------------------------------------------------------------------%
-%----------------------- Format Section Headers -----------------------%
-%----------------------------------------------------------------------%
+%-------------------------------------------------------------------------%
+%----------------------- Format Section Headers ------------------------%
+%-------------------------------------------------------------------------%
 
 %Note: Not sure why this command suppresses numbering of sections?
 \titleformat{\section}
@@ -64,9 +64,9 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 
-%----------------------------------------------------------------------%
+%---------------------------------------------------------------------------%
 %---------------------- Resume Heading Commands -----------------------%
-%----------------------------------------------------------------------%
+%---------------------------------------------------------------------------%
 
 %% Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
@@ -100,7 +100,7 @@
 %---------------------------- Resume Items -----------------------------% 
 %-----------------------------------------------------------------------%
 
-\newcommand{\resumeItem}[1]{\item[\textbullet] \small #1 \vspace{-2pt}}
+\newcommand{\resumeItem}[1]{\item[\textbullet] \small #1 \vspace{-1.8pt}}
 
 \newcommand{\projectItem}[2]{
   \item\small \textbf{#1:} \textrm{#2} \vspace{-2pt} 
