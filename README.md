@@ -1,5 +1,5 @@
 # William Spagnola Resume
-- Designed statistician/data scientist resume with LaTex
+- Designed statistician/data scientist resume with LaTeX
 - Borrowed many functions and general style  from [Sourabh Bajaj]( https://www.overleaf.com/latex/templates/software-engineer-resume/gqxmqsvsbdjf).
 - Moved most functions to separate style file (style_cv.sty)
 - All packages should be included in MacTex and TexLive Installations of LaTeX
