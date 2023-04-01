@@ -1,0 +1,195 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{titlesec} % for \titleformat command
+\usepackage[usenames,dvipsnames]{color} % for \color command
+\usepackage{enumitem} %for [leftmargin=*] in \resumeSubHeadingListStart itemize environment 
+\usepackage[empty]{fullpage} %sets margins to fullpage 
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref} % For website urls 
+\usepackage{style_cv} % My stylesheet based on MIT/ Sourabh Bajaj
+\usepackage[left=0.5cm, right=0.5cm, top=1cm, bottom=0.5cm]{geometry} %Set margins
+\pdfgentounicode=1
+\urlstyle{same}
+\setlength{\footskip}{4.09pt}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+{\huge \textbf{William Spagnola}} 
+\end{center}
+\vspace{-10pt}
+\small
+
+% Note: Should Figure out how to center center column properly without using \hspace
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+
+	470 Lenox Ave. & 
+	\hspace{24pt}\href{https://www.williamspagnola.com/}{williamspagnola.com}  & 
+	717-683-4039 \\ 
+	
+	New York, NY 10037  &
+	\hspace{24pt}\href{https://github.com/wspagnola/}{github.com/wspagnola}  &
+	\href{mailto:william.spagnola@nyu.edu}{william.spagnola@nyu.edu}  \\
+	
+\end{tabular*}
+
+
+\vspace{-12pt}
+%%-----------EXPERIENCE-----------------
+\section{Experience}
+	\resumeSubHeadingListStart
+	
+	
+			\resumeSubheading
+			{Curriculum Associates}{Remote}
+			{Statistical Analyst}{May 2022 to Present}
+			\resumeItemListStart
+				\resumeItem{Prepare correlation reports for districts and run statistical analyses to predict student performance}
+				\resumeItem{Query Redshift database to generate reports for internal and external stakeholders}	
+				\resumeItem{Automate reports generation process through R}
+			\resumeItemListEnd
+			
+		\resumeSubheading
+			{Research Alliance for New York City Schools}{New York, NY}
+			{Technical Research Analyst}{July 2019 to April 2022}
+			\resumeItemListStart
+				\resumeItem{Maintained data pipeline and design data structures in preparation for analysis using SQL and SAS. }
+				\resumeItem{Designed regression discontinuity study to analyze causal effect of Career and Technical Education on high school graduation.}  
+				\resumeItem {Created Logistic Regression model to predict dropout risk among New York City public high school students.} 
+				\resumeItem{Developed survey questions to measure effect of after-school program for disadvantaged students on STEM awareness.  Planned logistics of obtaining consent and distributing the survey via Qualtrics.}
+			\resumeItemListEnd
+			
+		\resumeSubheading
+			{Tobacco Research Lab} {New York, NY}
+			{Research Intern}{January 2019 to June 2019}
+			\resumeItemListStart
+				\resumeItem{Estimated probability of smoking initiation,  cessation, and relapse over time from longitudinal survey data.  Presented results in interactive visualization to illustrate changes in tobacco use.  }
+			\resumeItemListEnd
+
+	\resumeSubheading
+	{The Rusk Institute of Rehabilitation Medicine} {New York, NY}
+	{Statistical Consultant}{February 2018 to June 2019}
+		\resumeItemListStart
+			\resumeItem{Consulted on study of correlations between cytokine types and fibromyalgia.   Provided advice on non-parametric methods and  multiple comparisons adjustments.   Article published in \textit{The Journal of the International Association for the Study of Pain}.}
+			\resumeItem {Collaborated on study proposal of the effects of Heart Rate Variability using simulation and multi-level modeling.}
+			\resumeItem {Provided statistical consulting for research on the effectiveness of exercise and speech therapy.}
+		\resumeItemListEnd
+	
+	\resumeSubheading
+	{New York City Department of Education}{Bronx, NY}
+	{Special Education Teacher}{September 2009 to June 2016}
+		\resumeItemListStart
+			\resumeItem {Taught students with autism and intellectual disabilities in a public special education high school.}
+		\resumeItemListEnd
+	\resumeSubHeadingListEnd
+%-----------EDUCATION-----------------
+
+\section{Education}
+	\resumeSubHeadingListStart
+   		\resumeSubheadingAward
+      		{New York University}{New York, NY}
+      		{Master of Science in Applied Statistics for Social Science Research;  GPA: 4.00}{}
+      		{Recipient of Western Scholarship}{}
+      	\resumeSubheading
+      		{Pace University}{New York, NY}
+      		{Master of Science in Special Education} {}
+      	\resumeSubheading
+      		{Loyola University}{Baltimore, MD}
+      		{B.A. in English Literature with Spanish Minor}{}
+    \resumeSubHeadingListEnd
+
+%------------- PROJECTS ------------------
+\section{Projects}
+\resumeItemListStart
+
+	\projectItem {Advent of Code}
+				{Completed daily coding challenges using NumPy and Pandas.}
+	\projectItem {Machine Learning Project on 2016 Election Data}
+				 {Identified clusters in county-level presidential data using k-means and model-based clustering algorithms.}
+	\projectItem {Interactive Shiny App for COVID19 Data}
+				 {Created interactive/up-to-date dashboard of COVID case and death data at country,  state,  and county levels.}
+	\projectItem{Gender Dynamics in Data Science Survey Project}
+				{Collaborated on a team to create a survey to investigate perceptions of gender and ability in data science.}
+	\projectItem {NYPD Crime Data Visualization}
+				 {Won award from NYU Statistics Club for creating data visualization that compared New York City crime rates on Halloween to yearly averages.}
+	\projectItem{Family Heritage Website}
+				{Developed website on Pennsylvanian German family history for genealogy organization.}
+\resumeItemListEnd
+
+
+% Updated process Missing Data using Fully conditional specification/stochastic regresison model 
+
+% Designed SAS macros: 
+%% 1) Display regression discontinuity using binned scatter plots
+%% 2) Identify cutoffs in R discontinuities
+%% 3) Estimated causal effects using local linear probability model with fixed effects
+%% 4) Create SAS function for RCT/RDD Anaylsis 
+			%%% Add covariates
+			%%% Add fixed effects
+			%%% Add cluster standard errors
+			%%% Add multiple outcome variables and output table with impact estimates 
+
+% ES Options
+%% Google Apps Script: Mail merge and send consent/assent forms
+%% Qualtrics to distrubte survey students 
+%% Helped designed multi-level study for WWC; Preliminarily receive 
+%% Used PCA to find clusters of questions[?]
+%% Use Cronbach's Alpha to asses internal consistencies of constructs.
+
+%	\projectItem {NYPD Stop and Frisk Data}
+%				{Designed logistic regression model to investigate police data based on police stops and predict probability of finding weapons }
+
+%Skills: Stata,  Emacs,  Vim,  Linux,  Latex
+
+
+
+% Machine Learning Project to Predict NYC High School Graduation Rates: Created models using Random
+%Forest and Lasso Regression to predict school-level graduation rates based on data obtained from the New York City Department of Education.
+% Causal Inference: Simulated data to study how violations of assumptions affected treatment estimates in Regression
+% Reproducibility Study on Airbnb: Researched racial discrimination in the online rental market by replicating th results from a study on Airbnb and using multiple linear regression to perform original analyses on the interaction ffects %of race with other variables.
+% Tableau Dashboard: Election Data 
+% Causal Inference: Simulated data to study how violations of assumptions affected treatment estimates in Regression Discontinuity, Instrumental Variable, and Fixed-Effects Panel Data designs
+% Unsupervised Learning Project on 2016 Election Data: Investigated county-level presidential election trends using k-means and model-based clustering algorithms.
+% Webscraping/Text Analysis: Beatles Chords  
+% Twitter/NLP Project:  Tweets Naive Bayes; Trump or Staff
+
+
+
+% ------------- SKILLS	------------------
+
+\section{Skills}
+\vspace{-1pt}
+\begin{itemize}
+\small
+\begin{minipage}{0.3\linewidth}
+    \item R and RShiny
+    \item Python
+    \item SAS
+\end{minipage}
+% Note you have to add as many items here as are in the two columns
+\begin{minipage}{0.025\linewidth}
+	\item[\hspace{\fill}]
+	\item[\hspace{\fill}]
+	\item[\hspace{\fill}]
+\end{minipage}
+\begin{minipage}{0.3\linewidth}
+    \item Tableau
+    \item Stata
+    \item SQL
+\end{minipage}
+\begin{minipage}{0.025\linewidth}
+	\item[\hspace{\fill}]
+	\item[\hspace{\fill}]
+	\item[\hspace{\fill}]
+\end{minipage}
+\begin{minipage}{0.3\linewidth}
+	\item Google Apps Script
+    \item Git
+    \item HTML/CSS
+\end{minipage}
+\end{itemize}
+
+\end{document}
+
+
